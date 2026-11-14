@@ -23,7 +23,7 @@ This experiment demonstrates end-to-end IoT cloud telemetry and environmental mo
 
 The overall hardware schematic and system pipeline for Continuous Assessment 15 is shown below:
 
-![Circuit Diagram](circuit_diagram.png)
+![Circuit Diagram](circuit.png)
 
 ### Inference
 

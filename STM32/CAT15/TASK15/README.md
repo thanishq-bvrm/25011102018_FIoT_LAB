@@ -30,11 +30,13 @@ The circuit diagram and hardware connections for Task 15 are shown below:
   - `CH_PD (EN)`: Chip enable tied to 3.3V (with 10 kΩ pull-up).
   - `RST`: Active-low hardware reset.
 - **Power Supply**:
-  - 5V USB / Power Input $ightarrow$ AMS1117-3.3 LDO Regulator $ightarrow$ 3.3V Regulated Output Rail.
+  - 5V USB / Power Input $
+ightarrow$ AMS1117-3.3 LDO Regulator $
+ightarrow$ 3.3V Regulated Output Rail.
   - Filter capacitors: $10\ \mu	ext{F}$ ($C_1$, $C_2$) on input and output rails.
   - Decoupling capacitors: $0.1\ \mu	ext{F}$ on MCU VCC and power lines.
 
-![Circuit Diagram](circuit_diagram.png)
+![Circuit Diagram](circuit.png)
 
 ### 2. Core Logic / Pseudocode / Code Base
 

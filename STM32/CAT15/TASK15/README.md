@@ -6,7 +6,7 @@
 
 **NAME OF EXP:** BME280 Environmental Data Acquisition & MQTT Cloud Telemetry
 
-**HARDWARE SETUP / PLATFORM:** Keil MDK-ARM + STM32CubeMX + STM32 NUCLEO-F401RE + Bosch BME280 + ESP8266
+**HARDWARE SETUP / PLATFORM:** Keil MDK-ARM + STM32CubeMX + STM32 Platform (STM32F103C8T6 / NUCLEO-F401RE) + Bosch BME280 + ESP8266 (ESP-01)
 
 ---
 
@@ -16,24 +16,25 @@
 
 The circuit diagram and hardware connections for Task 15 are shown below:
 
-- **Microcontroller**: STM32 NUCLEO-F401RE (ARM Cortex-M4 with FPU @ 84 MHz, 3.3V VDD).
-- **Bosch BME280 Sensor**:
-  - `VCC`: Connected to 3.3V power supply rail.
+- **Microcontroller**: STM32 Microcontroller (STM32F103C8T6 / NUCLEO Platform @ 3.3V VDD).
+- **Bosch BME280 Sensor Module**:
+  - `VCC`: Connected to 3.3V power supply rail (from AMS1117-3.3 regulator).
   - `GND`: Connected to system common GND.
-  - `SCL`: Connected to STM32 `PB8` configured as I2C1_SCL (100 kHz standard mode with external/internal pull-up).
-  - `SDA`: Connected to STM32 `PB9` configured as I2C1_SDA (100 kHz standard mode with external/internal pull-up).
-  - `SDO`: Tied to GND (sets primary 7-bit I2C address to `0x76`).
-  - `CSB`: Tied to 3.3V (selects I2C protocol mode).
-- **ESP8266 Wi-Fi Modem (Wemos D1 / ESP-01)**:
-  - `VCC` & `CH_PD`: Connected to regulated 3.3V rail (capable of 300 mA peak current).
-  - `GND`: Connected to common GND.
-  - `RX`: Connected to STM32 `PA9` (USART1_TX).
-  - `TX`: Connected to STM32 `PA10` (USART1_RX).
-- **Debug & Monitoring**:
-  - `PA2` (USART2_TX) and `PA3` (USART2_RX) connected via onboard ST-LINK V2.1 virtual COM port to PC @ 115200 baud.
-  - `PA5`: User LED (LD2) toggles on each published packet.
+  - `SCL`: Connected to STM32 `PB6` (I2C1_SCL) with 4.7 kΩ external pull-up resistor ($R_1$) to 3.3V.
+  - `SDA`: Connected to STM32 `PB7` (I2C1_SDA) with 4.7 kΩ external pull-up resistor ($R_2$) to 3.3V.
+- **ESP-01 (ESP8266) Wi-Fi Module**:
+  - `VCC`: Connected to regulated 3.3V rail.
+  - `GND`: Connected to system common GND.
+  - `RXD`: Connected to STM32 `PA9` (USART1_TX).
+  - `TXD`: Connected to STM32 `PA10` (USART1_RX).
+  - `CH_PD (EN)`: Chip enable tied to 3.3V (with 10 kΩ pull-up).
+  - `RST`: Active-low hardware reset.
+- **Power Supply**:
+  - 5V USB / Power Input $ightarrow$ AMS1117-3.3 LDO Regulator $ightarrow$ 3.3V Regulated Output Rail.
+  - Filter capacitors: $10\ \mu	ext{F}$ ($C_1$, $C_2$) on input and output rails.
+  - Decoupling capacitors: $0.1\ \mu	ext{F}$ on MCU VCC and power lines.
 
-![Circuit Diagram](circuit.png)
+![Circuit Diagram](circuit_diagram.png)
 
 ### 2. Core Logic / Pseudocode / Code Base
 

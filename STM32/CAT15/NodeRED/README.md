@@ -27,7 +27,7 @@ The software architecture and data pipeline diagram for the Node-RED environment
   - `Trend Charts`: 1-hour rolling historical line charts tracking ambient shifts.
   - `Push Alerts`: Real-time toast notifications for temperatures exceeding 35 °C or barometric drops below 995 hPa.
 
-![Circuit Diagram](circuit.png)
+![Circuit Diagram](circuit_diagram.png)
 
 ### 2. Core Logic / Pseudocode / Code Base
 

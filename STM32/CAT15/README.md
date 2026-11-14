@@ -6,7 +6,7 @@
 
 **NAME OF EXP:** Environmental Sensing (BME280) & MQTT Cloud Analytics with Node-RED Dashboard
 
-**HARDWARE SETUP / PLATFORM:** STM32 NUCLEO-F401RE + Bosch Sensortec BME280 + ESP8266 + Node-RED Dashboard
+**HARDWARE SETUP / PLATFORM:** STM32 Platform (STM32F103C8T6 / NUCLEO-F401RE) + Bosch BME280 + ESP8266 (ESP-01) + Node-RED Dashboard
 
 ---
 
@@ -23,7 +23,7 @@ This experiment demonstrates end-to-end IoT cloud telemetry and environmental mo
 
 The overall hardware schematic and system pipeline for Continuous Assessment 15 is shown below:
 
-![Circuit Diagram](circuit.png)
+![Circuit Diagram](circuit_diagram.png)
 
 ### Inference
 

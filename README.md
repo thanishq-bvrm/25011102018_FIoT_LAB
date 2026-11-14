@@ -493,8 +493,6 @@ The laboratory syllabus spans two distinct microcontroller architectures:
         │   └── README.md                # Task 15 technical report & inferences
         ├── NodeRED/                     # Node-RED Middleware & Live Dashboard UI
         │   ├── flows.json               # Importable Node-RED flow (MQTT In + Analytics Engine + Gauges + Charts)
-        │   ├── architecture.png         # Pipeline schematic
-        │   ├── circuit.png              # Flow architecture diagram
         │   └── README.md                # Node-RED setup, flow import, and testing guide
         ├── circuit.png                  # CAT15 complete hardware schematic
         └── README.md                    # CAT15 evaluation overview
@@ -678,7 +676,7 @@ Every experiment and task strictly adheres to the standardized documentation for
 | **CAT 14 - TASK 14A** | [STM32/CAT14/TASK14A/](STM32/CAT14/TASK14A/) | [circuit.png](STM32/CAT14/TASK14A/circuit.png) | [README.md](STM32/CAT14/TASK14A/README.md) | TASK14A.ioc, MDK-ARM/ | **PASSED** |
 | **CAT 14 - TASK 14B** | [STM32/CAT14/TASK14B/](STM32/CAT14/TASK14B/) | [circuit.png](STM32/CAT14/TASK14B/circuit.png) | [README.md](STM32/CAT14/TASK14B/README.md) | TASK14B.ioc, MDK-ARM/ | **PASSED** |
 | **CAT 15 - TASK 15** | [STM32/CAT15/TASK15/](STM32/CAT15/TASK15/) | [circuit.png](STM32/CAT15/TASK15/circuit.png) | [README.md](STM32/CAT15/TASK15/README.md) | IOT_project.ioc, MDK-ARM/ | **PASSED** |
-| **CAT 15 - Node-RED** | [STM32/CAT15/NodeRED/](STM32/CAT15/NodeRED/) | [circuit.png](STM32/CAT15/NodeRED/circuit.png) | [README.md](STM32/CAT15/NodeRED/README.md) | flows.json, architecture.png | **PASSED** |
+| **CAT 15 - Node-RED** | [STM32/CAT15/NodeRED/](STM32/CAT15/NodeRED/) | [circuit.png](STM32/CAT15/circuit.png) | [README.md](STM32/CAT15/NodeRED/README.md) | flows.json | **PASSED** |
 ---
 
 ## 7. Hardware Platform Specifications & Network Configuration

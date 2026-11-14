@@ -27,7 +27,7 @@ The software architecture and data pipeline diagram for the Node-RED environment
   - `Trend Charts`: 1-hour rolling historical line charts tracking ambient shifts.
   - `Push Alerts`: Real-time toast notifications for temperatures exceeding 35 °C or barometric drops below 995 hPa.
 
-![Circuit Diagram](circuit_diagram.png)
+![Circuit Diagram](../circuit_diagram.png)
 
 ### 2. Core Logic / Pseudocode / Code Base
 
@@ -58,7 +58,6 @@ Node-RED acts as a centralized IoT middleware platform that unifies cloud teleme
 - `flows.json`: Complete, exportable Node-RED flow file containing MQTT configuration, function node, dashboard groups, gauges, and charts.
 - `fn_bme280_processor`: Multi-output JavaScript function implementing environmental equations and data routing.
 - `card_station_overview`: HTML5/CSS glassmorphic template card rendering live status and metrics.
-- `architecture.png`: High-resolution end-to-end data pipeline schematic.
 
 ### 3. Inference
 Node-RED successfully bridges the wireless cloud MQTT telemetry stream into an interactive, high-fidelity environmental monitoring station, validating real-time sensor processing, meteorological analytics, and automated alerting for IoT deployments.

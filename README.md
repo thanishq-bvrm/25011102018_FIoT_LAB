@@ -605,22 +605,22 @@ Every experiment and task strictly adheres to the standardized documentation for
 
 ### 6.1 Course Evaluation Syllabus & Experiment Overview
 
-| Exp Identifier | Date | Name of Experiment | Hardware Setup / Platform | Subdivisions / Dedicated Task Folders | Status |
-|:---:|:---:|---|---|---|:---:|
-| **[CAT 2](8051/CAT2/)** | 20/07/2026 | 8051 Tool Chain Setup & Hardware Bring-Up | AT89S52 + Keil µVision + USB-ISP | • [TASK 2A: Hardware Board Bring-Up](8051/CAT2/TASK2A/)<br>• [TASK 2B: 1 Hz LED Blink on Port 2](8051/CAT2/TASK2B/)<br>• [TASK 2C: Delay Library Function](8051/CAT2/TASK2C/) | **PASSED** |
-| **[CAT 3](8051/CAT3/)** | 27/07/2026 | Timer-Based LED Pattern Generator & Button Controller | AT89S52 + 4 LEDs + Push-Button | • [TASK 3A: Mode Switch Controller](8051/CAT3/TASK3A/)<br>• [TASK 3B: Binary Counter](8051/CAT3/TASK3B/)<br>• [TASK 3C: Alternating Pattern](8051/CAT3/TASK3C/)<br>• [TASK 3D: All-LED Flash](8051/CAT3/TASK3D/) | **PASSED** |
-| **[CAT 4](8051/CAT4/)** | 03/08/2026 | Human-Machine Interface using Keypad, LEDs & 7-Seg | AT89S52 + 4x4 Keypad + 7-Segment + 4 LEDs | • [TASK 4A: Keypad Scanning HMI](8051/CAT4/TASK4A/)<br>• [TASK 4B: 7-Segment Output](8051/CAT4/TASK4B/)<br>• [TASK 4C: Keypad LED Patterns](8051/CAT4/TASK4C/) | **PASSED** |
-| **[CAT 5](8051/CAT5/)** | 10/08/2026 | Hardware Timer & Timing for Fading, Pulse, & Stepper | AT89S52 + Timer 0 + DSO + ULN2003 + Stepper | • [TASK 5A: 1ms Timer 0 ISR Driver](8051/CAT5/TASK5A/)<br>• [TASK 5B.1: PWM Triangular Wave Modulation](8051/CAT5/TASK5B/TASK5B.1/)<br>• [TASK 5B.2: PWM Carrier Frequency Analysis](8051/CAT5/TASK5B/TASK5B.2/)<br>• [TASK 5B.3: Multi-LED Breathing Controller](8051/CAT5/TASK5B/TASK5B.3/)<br>• [TASK 5C: Stepper Motor Full-Step Driver](8051/CAT5/TASK5C/) | **PASSED** |
-| **[CAT 6](8051/CAT6/)** | 17/08/2026 | UART Driver and Serial Debugging | AT89S52 + USB-TTL Bridge + PuTTY Terminal | • [TASK 6A: UART String Non-Blocking TX](8051/CAT6/TASK6A/)<br>• [TASK 6B: Terminal Echo & Circular Ring Buffer](8051/CAT6/TASK6B/) | **PASSED** |
-| **[CAT 7](8051/CAT7/)** | 24/08/2026 | 16×2 LCD Driver Development & Dynamic Display Control | AT89S52 + HD44780 16×2 LCD + 4×4 Keypad | • [TASK 7A: HD44780 LCD 4-Bit Driver](8051/CAT7/TASK7A/)<br>• [TASK 7B: Cursor Positioning & Dynamic Counter](8051/CAT7/TASK7B/)<br>• [TASK 7C: 4x4 Keypad Interactive Menu](8051/CAT7/TASK7C/) | **PASSED** |
-| **[CAT 8](STM32/CAT8/)** | 21/09/2026 | STM32 GPIO Bring-Up and Switch-Controlled LED | STM32 Blue Pill (STM32F103C8T6) + Keil MDK | • [TASK 8A: GPIO Direct Follow Mode](STM32/CAT8/TASK8A/)<br>• [TASK 8B: Debounced Toggle Mode](STM32/CAT8/TASK8B/)<br>• [TASK 8C: Press Duration Classifier](STM32/CAT8/TASK8C/) | **PASSED** |
-| **[CAT 9](STM32/CAT9/)** | 28/09/2026 | STM32 Hardware Timer Interrupts & PWM Generation | STM32 NUCLEO-F401RE + DSO | • [TASK 9A: Timer 2 Periodic Interrupt (1 Hz Blink)](STM32/CAT9/TASK9A/)<br>• [TASK 9B: Timer PWM Generation Variable Duty](STM32/CAT9/TASK9B/) | **PASSED** |
-| **[CAT 10](STM32/CAT10/)** | 05/10/2026 | STM32 USART Serial Communication Modes | STM32 NUCLEO-F401RE + PuTTY Terminal | • [TASK 10A: USART2 Polling String Transmission](STM32/CAT10/TASK10A/)<br>• [TASK 10B: USART2 Interrupt-Driven Echo](STM32/CAT10/TASK10B/)<br>• [TASK 10C: USART2 DMA Circular Streaming](STM32/CAT10/TASK10C/) | **PASSED** |
-| **[CAT 11](STM32/CAT11/)** | 12/10/2026 | HTTP Server: STM32–Wemos Wi-Fi Modem Using AT Commands | STM32 NUCLEO-F401RE + Wemos D1 (ESP8266) | • [TASK 11A: ESP8266 TCP Server Configuration](STM32/CAT11/TASK11A/)<br>• [TASK 11B: HTTP Request Parser & Static HTML Response](STM32/CAT11/TASK11B/)<br>• [TASK 11C: Node-RED HTTP Client Ingestion](STM32/CAT11/TASK11C/) | **PASSED** |
-| **[CAT 12](STM32/CAT12/)** | 19/10/2026 | STM32F401RE Cortex-M4: GPIO & User Input Programming | STM32 NUCLEO-F401RE (STM32F401RET6) | • [TASK 12A: User LED LD2 Bring-Up (PA5)](STM32/CAT12/TASK12A/)<br>• [TASK 12B: Push Button B1 Latching State](STM32/CAT12/TASK12B/)<br>• [TASK 12C: Press Duration Classifier](STM32/CAT12/TASK12C/) | **PASSED** |
-| **[CAT 13](STM32/CAT13/)** | 19/10/2026 | BME280 Data Acquisition & HTTP Cloud Ingestion | STM32 NUCLEO-F401RE + BME280 + ESP8266 | • [TASK 13A: BME280 Bosch Driver Integration](STM32/CAT13/TASK13A/)<br>• [TASK 13B: JSON Formulation & HTTP POST](STM32/CAT13/TASK13B/)<br>• [TASK 13C: Node-RED Pipeline & Analytics](STM32/CAT13/TASK13C/) | **PASSED** |
-| **[CAT 14](STM32/CAT14/)** | 27/10/2026 | BME280 Interfacing (I2C) & MQTT Cloud Analytics | STM32 NUCLEO-F401RE + BME280 + ESP8266 + Node-RED | • [TASK 14: Integrated Smart Edge Node](STM32/CAT14/TASK14/)<br>• [TASK 14A: BME280 I2C Sensing](STM32/CAT14/TASK14A/)<br>• [TASK 14B: MQTT Cloud Analytics](STM32/CAT14/TASK14B/) | **PASSED** |
-| **[CAT 15](STM32/CAT15/)** | 09/11/2026 | Environmental Sensing (BME280) & MQTT Cloud Analytics | STM32 NUCLEO-F401RE + BME280 + ESP8266 + Node-RED | • [TASK 15: BME280 Sensor Acquisition & MQTT](STM32/CAT15/TASK15/)<br>• [Node-RED: Dashboard & Analytics](STM32/CAT15/NodeRED/) | **PASSED** |
+| Exp Identifier | Date | Name of Experiment | Hardware Setup / Platform | Subdivisions / Dedicated Task Folders |
+| :---: | :---: | --- | --- | --- |
+| **[CAT 2](8051/CAT2/)** | 20/07/2026 | 8051 Tool Chain Setup & Hardware Bring-Up | AT89S52 + Keil µVision + USB-ISP | • [TASK 2A: Hardware Board Bring-Up](8051/CAT2/TASK2A/)<br>• [TASK 2B: 1 Hz LED Blink on Port 2](8051/CAT2/TASK2B/)<br>• [TASK 2C: Delay Library Function](8051/CAT2/TASK2C/) |
+| **[CAT 3](8051/CAT3/)** | 27/07/2026 | Timer-Based LED Pattern Generator & Button Controller | AT89S52 + 4 LEDs + Push-Button | • [TASK 3A: Mode Switch Controller](8051/CAT3/TASK3A/)<br>• [TASK 3B: Binary Counter](8051/CAT3/TASK3B/)<br>• [TASK 3C: Alternating Pattern](8051/CAT3/TASK3C/)<br>• [TASK 3D: All-LED Flash](8051/CAT3/TASK3D/) |
+| **[CAT 4](8051/CAT4/)** | 03/08/2026 | Human-Machine Interface using Keypad, LEDs & 7-Seg | AT89S52 + 4x4 Keypad + 7-Segment + 4 LEDs | • [TASK 4A: Keypad Scanning HMI](8051/CAT4/TASK4A/)<br>• [TASK 4B: 7-Segment Output](8051/CAT4/TASK4B/)<br>• [TASK 4C: Keypad LED Patterns](8051/CAT4/TASK4C/) |
+| **[CAT 5](8051/CAT5/)** | 10/08/2026 | Hardware Timer & Timing for Fading, Pulse, & Stepper | AT89S52 + Timer 0 + DSO + ULN2003 + Stepper | • [TASK 5A: 1ms Timer 0 ISR Driver](8051/CAT5/TASK5A/)<br>• [TASK 5B.1: PWM Triangular Wave Modulation](8051/CAT5/TASK5B/TASK5B.1/)<br>• [TASK 5B.2: PWM Carrier Frequency Analysis](8051/CAT5/TASK5B/TASK5B.2/)<br>• [TASK 5B.3: Multi-LED Breathing Controller](8051/CAT5/TASK5B/TASK5B.3/)<br>• [TASK 5C: Stepper Motor Full-Step Driver](8051/CAT5/TASK5C/) |
+| **[CAT 6](8051/CAT6/)** | 17/08/2026 | UART Driver and Serial Debugging | AT89S52 + USB-TTL Bridge + PuTTY Terminal | • [TASK 6A: UART String Non-Blocking TX](8051/CAT6/TASK6A/)<br>• [TASK 6B: Terminal Echo & Circular Ring Buffer](8051/CAT6/TASK6B/) |
+| **[CAT 7](8051/CAT7/)** | 24/08/2026 | 16×2 LCD Driver Development & Dynamic Display Control | AT89S52 + HD44780 16×2 LCD + 4×4 Keypad | • [TASK 7A: HD44780 LCD 4-Bit Driver](8051/CAT7/TASK7A/)<br>• [TASK 7B: Cursor Positioning & Dynamic Counter](8051/CAT7/TASK7B/)<br>• [TASK 7C: 4x4 Keypad Interactive Menu](8051/CAT7/TASK7C/) |
+| **[CAT 8](STM32/CAT8/)** | 21/09/2026 | STM32 GPIO Bring-Up and Switch-Controlled LED | STM32 Blue Pill (STM32F103C8T6) + Keil MDK | • [TASK 8A: GPIO Direct Follow Mode](STM32/CAT8/TASK8A/)<br>• [TASK 8B: Debounced Toggle Mode](STM32/CAT8/TASK8B/)<br>• [TASK 8C: Press Duration Classifier](STM32/CAT8/TASK8C/) |
+| **[CAT 9](STM32/CAT9/)** | 28/09/2026 | STM32 Hardware Timer Interrupts & PWM Generation | STM32 NUCLEO-F401RE + DSO | • [TASK 9A: Timer 2 Periodic Interrupt (1 Hz Blink)](STM32/CAT9/TASK9A/)<br>• [TASK 9B: Timer PWM Generation Variable Duty](STM32/CAT9/TASK9B/) |
+| **[CAT 10](STM32/CAT10/)** | 05/10/2026 | STM32 USART Serial Communication Modes | STM32 NUCLEO-F401RE + PuTTY Terminal | • [TASK 10A: USART2 Polling String Transmission](STM32/CAT10/TASK10A/)<br>• [TASK 10B: USART2 Interrupt-Driven Echo](STM32/CAT10/TASK10B/)<br>• [TASK 10C: USART2 DMA Circular Streaming](STM32/CAT10/TASK10C/) |
+| **[CAT 11](STM32/CAT11/)** | 12/10/2026 | HTTP Server: STM32–Wemos Wi-Fi Modem Using AT Commands | STM32 NUCLEO-F401RE + Wemos D1 (ESP8266) | • [TASK 11A: ESP8266 TCP Server Configuration](STM32/CAT11/TASK11A/)<br>• [TASK 11B: HTTP Request Parser & Static HTML Response](STM32/CAT11/TASK11B/)<br>• [TASK 11C: Node-RED HTTP Client Ingestion](STM32/CAT11/TASK11C/) |
+| **[CAT 12](STM32/CAT12/)** | 19/10/2026 | STM32F401RE Cortex-M4: GPIO & User Input Programming | STM32 NUCLEO-F401RE (STM32F401RET6) | • [TASK 12A: User LED LD2 Bring-Up (PA5)](STM32/CAT12/TASK12A/)<br>• [TASK 12B: Push Button B1 Latching State](STM32/CAT12/TASK12B/)<br>• [TASK 12C: Press Duration Classifier](STM32/CAT12/TASK12C/) |
+| **[CAT 13](STM32/CAT13/)** | 19/10/2026 | BME280 Data Acquisition & HTTP Cloud Ingestion | STM32 NUCLEO-F401RE + BME280 + ESP8266 | • [TASK 13A: BME280 Bosch Driver Integration](STM32/CAT13/TASK13A/)<br>• [TASK 13B: JSON Formulation & HTTP POST](STM32/CAT13/TASK13B/)<br>• [TASK 13C: Node-RED Pipeline & Analytics](STM32/CAT13/TASK13C/) |
+| **[CAT 14](STM32/CAT14/)** | 27/10/2026 | BME280 Interfacing (I2C) & MQTT Cloud Analytics | STM32 NUCLEO-F401RE + BME280 + ESP8266 + Node-RED | • [TASK 14: Integrated Smart Edge Node](STM32/CAT14/TASK14/)<br>• [TASK 14A: BME280 I2C Sensing](STM32/CAT14/TASK14A/)<br>• [TASK 14B: MQTT Cloud Analytics](STM32/CAT14/TASK14B/) |
+| **[CAT 15](STM32/CAT15/)** | 09/11/2026 | Environmental Sensing (BME280) & MQTT Cloud Analytics | STM32 NUCLEO-F401RE + BME280 + ESP8266 + Node-RED | • [TASK 15: BME280 Sensor Acquisition & MQTT](STM32/CAT15/TASK15/)<br>• [Node-RED: Dashboard & Analytics](STM32/CAT15/NodeRED/) |
 
 ---
 
@@ -628,55 +628,55 @@ Every experiment and task strictly adheres to the standardized documentation for
 
 #### Part I: 8051 Microcontroller (AT89S52 Bare-Metal — 20 Tasks)
 
-| Task | Evaluated Directory | Circuit Diagram | Documentation | Firmware Hex | Evaluation Status |
-|---|---|:---:|:---:|:---:|:---:|
-| **CAT 2 - TASK 2A** | [8051/CAT2/TASK2A/](8051/CAT2/TASK2A/) | [circuit.png](8051/CAT2/TASK2A/circuit.png) | [README.md](8051/CAT2/TASK2A/README.md) | TASK2A.hex | **PASSED** |
-| **CAT 2 - TASK 2B** | [8051/CAT2/TASK2B/](8051/CAT2/TASK2B/) | [circuit.png](8051/CAT2/TASK2B/circuit.png) | [README.md](8051/CAT2/TASK2B/README.md) | TASK2B.hex | **PASSED** |
-| **CAT 2 - TASK 2C** | [8051/CAT2/TASK2C/](8051/CAT2/TASK2C/) | [circuit.png](8051/CAT2/TASK2C/circuit.png) | [README.md](8051/CAT2/TASK2C/README.md) | TASK2C.hex | **PASSED** |
-| **CAT 3 - TASK 3A** | [8051/CAT3/TASK3A/](8051/CAT3/TASK3A/) | [circuit.png](8051/CAT3/TASK3A/circuit.png) | [README.md](8051/CAT3/TASK3A/README.md) | TASK3A.hex | **PASSED** |
-| **CAT 3 - TASK 3B** | [8051/CAT3/TASK3B/](8051/CAT3/TASK3B/) | [circuit.png](8051/CAT3/TASK3B/circuit.png) | [README.md](8051/CAT3/TASK3B/README.md) | TASK3B.hex | **PASSED** |
-| **CAT 3 - TASK 3C** | [8051/CAT3/TASK3C/](8051/CAT3/TASK3C/) | [circuit.png](8051/CAT3/TASK3C/circuit.png) | [README.md](8051/CAT3/TASK3C/README.md) | TASK3C.hex | **PASSED** |
-| **CAT 3 - TASK 3D** | [8051/CAT3/TASK3D/](8051/CAT3/TASK3D/) | [circuit.png](8051/CAT3/TASK3D/circuit.png) | [README.md](8051/CAT3/TASK3D/README.md) | TASK3D.hex | **PASSED** |
-| **CAT 4 - TASK 4A** | [8051/CAT4/TASK4A/](8051/CAT4/TASK4A/) | [circuit.png](8051/CAT4/TASK4A/circuit.png) | [README.md](8051/CAT4/TASK4A/README.md) | TASK4A.hex | **PASSED** |
-| **CAT 4 - TASK 4B** | [8051/CAT4/TASK4B/](8051/CAT4/TASK4B/) | [circuit.png](8051/CAT4/TASK4B/circuit.png) | [README.md](8051/CAT4/TASK4B/README.md) | TASK4B.hex | **PASSED** |
-| **CAT 4 - TASK 4C** | [8051/CAT4/TASK4C/](8051/CAT4/TASK4C/) | [circuit.png](8051/CAT4/TASK4C/circuit.png) | [README.md](8051/CAT4/TASK4C/README.md) | TASK4C.hex | **PASSED** |
-| **CAT 5 - TASK 5A** | [8051/CAT5/TASK5A/](8051/CAT5/TASK5A/) | [circuit.png](8051/CAT5/TASK5A/circuit.png) | [README.md](8051/CAT5/TASK5A/README.md) | TASK5A.hex | **PASSED** |
-| **CAT 5 - TASK 5B.1** | [8051/CAT5/TASK5B/TASK5B.1/](8051/CAT5/TASK5B/TASK5B.1/) | [circuit.png](8051/CAT5/TASK5B/TASK5B.1/circuit.png) | [README.md](8051/CAT5/TASK5B/TASK5B.1/README.md) | TASK5B_1.hex | **PASSED** |
-| **CAT 5 - TASK 5B.2** | [8051/CAT5/TASK5B/TASK5B.2/](8051/CAT5/TASK5B/TASK5B.2/) | [circuit.png](8051/CAT5/TASK5B/TASK5B.2/circuit.png) | [README.md](8051/CAT5/TASK5B/TASK5B.2/README.md) | TASK5B_2.hex | **PASSED** |
-| **CAT 5 - TASK 5B.3** | [8051/CAT5/TASK5B/TASK5B.3/](8051/CAT5/TASK5B/TASK5B.3/) | [circuit.png](8051/CAT5/TASK5B/TASK5B.3/circuit.png) | [README.md](8051/CAT5/TASK5B/TASK5B.3/README.md) | TASK5B_3.hex | **PASSED** |
-| **CAT 5 - TASK 5C** | [8051/CAT5/TASK5C/](8051/CAT5/TASK5C/) | [circuit.png](8051/CAT5/TASK5C/circuit.png) | [README.md](8051/CAT5/TASK5C/README.md) | TASK5C.hex | **PASSED** |
-| **CAT 6 - TASK 6A** | [8051/CAT6/TASK6A/](8051/CAT6/TASK6A/) | [circuit.png](8051/CAT6/TASK6A/circuit.png) | [README.md](8051/CAT6/TASK6A/README.md) | TASK6A.hex | **PASSED** |
-| **CAT 6 - TASK 6B** | [8051/CAT6/TASK6B/](8051/CAT6/TASK6B/) | [circuit.png](8051/CAT6/TASK6B/circuit.png) | [README.md](8051/CAT6/TASK6B/README.md) | TASK6B.hex | **PASSED** |
-| **CAT 7 - TASK 7A** | [8051/CAT7/TASK7A/](8051/CAT7/TASK7A/) | [circuit.png](8051/CAT7/TASK7A/circuit.png) | [README.md](8051/CAT7/TASK7A/README.md) | TASK7A.hex | **PASSED** |
-| **CAT 7 - TASK 7B** | [8051/CAT7/TASK7B/](8051/CAT7/TASK7B/) | [circuit.png](8051/CAT7/TASK7B/circuit.png) | [README.md](8051/CAT7/TASK7B/README.md) | TASK7B.hex | **PASSED** |
-| **CAT 7 - TASK 7C** | [8051/CAT7/TASK7C/](8051/CAT7/TASK7C/) | [circuit.png](8051/CAT7/TASK7C/circuit.png) | [README.md](8051/CAT7/TASK7C/README.md) | TASK7C.hex | **PASSED** |
+| Task | Evaluated Directory | Circuit Diagram | Documentation | Firmware Hex |
+| --- | --- | :---: | :---: | :---: |
+| **CAT 2 - TASK 2A** | [8051/CAT2/TASK2A/](8051/CAT2/TASK2A/) | [circuit.png](8051/CAT2/TASK2A/circuit.png) | [README.md](8051/CAT2/TASK2A/README.md) | TASK2A.hex |
+| **CAT 2 - TASK 2B** | [8051/CAT2/TASK2B/](8051/CAT2/TASK2B/) | [circuit.png](8051/CAT2/TASK2B/circuit.png) | [README.md](8051/CAT2/TASK2B/README.md) | TASK2B.hex |
+| **CAT 2 - TASK 2C** | [8051/CAT2/TASK2C/](8051/CAT2/TASK2C/) | [circuit.png](8051/CAT2/TASK2C/circuit.png) | [README.md](8051/CAT2/TASK2C/README.md) | TASK2C.hex |
+| **CAT 3 - TASK 3A** | [8051/CAT3/TASK3A/](8051/CAT3/TASK3A/) | [circuit.png](8051/CAT3/TASK3A/circuit.png) | [README.md](8051/CAT3/TASK3A/README.md) | TASK3A.hex |
+| **CAT 3 - TASK 3B** | [8051/CAT3/TASK3B/](8051/CAT3/TASK3B/) | [circuit.png](8051/CAT3/TASK3B/circuit.png) | [README.md](8051/CAT3/TASK3B/README.md) | TASK3B.hex |
+| **CAT 3 - TASK 3C** | [8051/CAT3/TASK3C/](8051/CAT3/TASK3C/) | [circuit.png](8051/CAT3/TASK3C/circuit.png) | [README.md](8051/CAT3/TASK3C/README.md) | TASK3C.hex |
+| **CAT 3 - TASK 3D** | [8051/CAT3/TASK3D/](8051/CAT3/TASK3D/) | [circuit.png](8051/CAT3/TASK3D/circuit.png) | [README.md](8051/CAT3/TASK3D/README.md) | TASK3D.hex |
+| **CAT 4 - TASK 4A** | [8051/CAT4/TASK4A/](8051/CAT4/TASK4A/) | [circuit.png](8051/CAT4/TASK4A/circuit.png) | [README.md](8051/CAT4/TASK4A/README.md) | TASK4A.hex |
+| **CAT 4 - TASK 4B** | [8051/CAT4/TASK4B/](8051/CAT4/TASK4B/) | [circuit.png](8051/CAT4/TASK4B/circuit.png) | [README.md](8051/CAT4/TASK4B/README.md) | TASK4B.hex |
+| **CAT 4 - TASK 4C** | [8051/CAT4/TASK4C/](8051/CAT4/TASK4C/) | [circuit.png](8051/CAT4/TASK4C/circuit.png) | [README.md](8051/CAT4/TASK4C/README.md) | TASK4C.hex |
+| **CAT 5 - TASK 5A** | [8051/CAT5/TASK5A/](8051/CAT5/TASK5A/) | [circuit.png](8051/CAT5/TASK5A/circuit.png) | [README.md](8051/CAT5/TASK5A/README.md) | TASK5A.hex |
+| **CAT 5 - TASK 5B.1** | [8051/CAT5/TASK5B/TASK5B.1/](8051/CAT5/TASK5B/TASK5B.1/) | [circuit.png](8051/CAT5/TASK5B/TASK5B.1/circuit.png) | [README.md](8051/CAT5/TASK5B/TASK5B.1/README.md) | TASK5B_1.hex |
+| **CAT 5 - TASK 5B.2** | [8051/CAT5/TASK5B/TASK5B.2/](8051/CAT5/TASK5B/TASK5B.2/) | [circuit.png](8051/CAT5/TASK5B/TASK5B.2/circuit.png) | [README.md](8051/CAT5/TASK5B/TASK5B.2/README.md) | TASK5B_2.hex |
+| **CAT 5 - TASK 5B.3** | [8051/CAT5/TASK5B/TASK5B.3/](8051/CAT5/TASK5B/TASK5B.3/) | [circuit.png](8051/CAT5/TASK5B/TASK5B.3/circuit.png) | [README.md](8051/CAT5/TASK5B/TASK5B.3/README.md) | TASK5B_3.hex |
+| **CAT 5 - TASK 5C** | [8051/CAT5/TASK5C/](8051/CAT5/TASK5C/) | [circuit.png](8051/CAT5/TASK5C/circuit.png) | [README.md](8051/CAT5/TASK5C/README.md) | TASK5C.hex |
+| **CAT 6 - TASK 6A** | [8051/CAT6/TASK6A/](8051/CAT6/TASK6A/) | [circuit.png](8051/CAT6/TASK6A/circuit.png) | [README.md](8051/CAT6/TASK6A/README.md) | TASK6A.hex |
+| **CAT 6 - TASK 6B** | [8051/CAT6/TASK6B/](8051/CAT6/TASK6B/) | [circuit.png](8051/CAT6/TASK6B/circuit.png) | [README.md](8051/CAT6/TASK6B/README.md) | TASK6B.hex |
+| **CAT 7 - TASK 7A** | [8051/CAT7/TASK7A/](8051/CAT7/TASK7A/) | [circuit.png](8051/CAT7/TASK7A/circuit.png) | [README.md](8051/CAT7/TASK7A/README.md) | TASK7A.hex |
+| **CAT 7 - TASK 7B** | [8051/CAT7/TASK7B/](8051/CAT7/TASK7B/) | [circuit.png](8051/CAT7/TASK7B/circuit.png) | [README.md](8051/CAT7/TASK7B/README.md) | TASK7B.hex |
+| **CAT 7 - TASK 7C** | [8051/CAT7/TASK7C/](8051/CAT7/TASK7C/) | [circuit.png](8051/CAT7/TASK7C/circuit.png) | [README.md](8051/CAT7/TASK7C/README.md) | TASK7C.hex |
 
 #### Part II: STM32 Microcontroller (ARM Cortex-M & HAL — 20 Tasks)
 
-| Task | Evaluated Directory | Circuit Diagram | Documentation | Project Files | Evaluation Status |
-|---|---|:---:|:---:|:---:|:---:|
-| **CAT 8 - TASK 8A** | [STM32/CAT8/TASK8A/](STM32/CAT8/TASK8A/) | [circuit.png](STM32/CAT8/TASK8A/circuit.png) | [README.md](STM32/CAT8/TASK8A/README.md) | TASK8A.ioc, MDK-ARM/ | **PASSED** |
-| **CAT 8 - TASK 8B** | [STM32/CAT8/TASK8B/](STM32/CAT8/TASK8B/) | [circuit.png](STM32/CAT8/TASK8B/circuit.png) | [README.md](STM32/CAT8/TASK8B/README.md) | TASK8B.ioc, MDK-ARM/ | **PASSED** |
-| **CAT 8 - TASK 8C** | [STM32/CAT8/TASK8C/](STM32/CAT8/TASK8C/) | [circuit.png](STM32/CAT8/TASK8C/circuit.png) | [README.md](STM32/CAT8/TASK8C/README.md) | TASK8C.ioc, MDK-ARM/ | **PASSED** |
-| **CAT 9 - TASK 9A** | [STM32/CAT9/TASK9A/](STM32/CAT9/TASK9A/) | [circuit.png](STM32/CAT9/TASK9A/circuit.png) | [README.md](STM32/CAT9/TASK9A/README.md) | TASK9A.ioc, MDK-ARM/ | **PASSED** |
-| **CAT 9 - TASK 9B** | [STM32/CAT9/TASK9B/](STM32/CAT9/TASK9B/) | [circuit.png](STM32/CAT9/TASK9B/circuit.png) | [README.md](STM32/CAT9/TASK9B/README.md) | TASK9B.ioc, MDK-ARM/ | **PASSED** |
-| **CAT 10 - TASK 10A** | [STM32/CAT10/TASK10A/](STM32/CAT10/TASK10A/) | [circuit.png](STM32/CAT10/TASK10A/circuit.png) | [README.md](STM32/CAT10/TASK10A/README.md) | TASK10A.ioc, MDK-ARM/ | **PASSED** |
-| **CAT 10 - TASK 10B** | [STM32/CAT10/TASK10B/](STM32/CAT10/TASK10B/) | [circuit.png](STM32/CAT10/TASK10B/circuit.png) | [README.md](STM32/CAT10/TASK10B/README.md) | TASK10B.ioc, MDK-ARM/ | **PASSED** |
-| **CAT 10 - TASK 10C** | [STM32/CAT10/TASK10C/](STM32/CAT10/TASK10C/) | [circuit.png](STM32/CAT10/TASK10C/circuit.png) | [README.md](STM32/CAT10/TASK10C/README.md) | TASK10C.ioc, MDK-ARM/ | **PASSED** |
-| **CAT 11 - TASK 11A** | [STM32/CAT11/TASK11A/](STM32/CAT11/TASK11A/) | [circuit.png](STM32/CAT11/TASK11A/circuit.png) | [README.md](STM32/CAT11/TASK11A/README.md) | TASK11A.ioc, MDK-ARM/ | **PASSED** |
-| **CAT 11 - TASK 11B** | [STM32/CAT11/TASK11B/](STM32/CAT11/TASK11B/) | [circuit.png](STM32/CAT11/TASK11B/circuit.png) | [README.md](STM32/CAT11/TASK11B/README.md) | TASK11B.ioc, MDK-ARM/ | **PASSED** |
-| **CAT 11 - TASK 11C** | [STM32/CAT11/TASK11C/](STM32/CAT11/TASK11C/) | [circuit.png](STM32/CAT11/TASK11C/circuit.png) | [README.md](STM32/CAT11/TASK11C/README.md) | TASK11C.ioc, MDK-ARM/ | **PASSED** |
-| **CAT 12 - TASK 12A** | [STM32/CAT12/TASK12A/](STM32/CAT12/TASK12A/) | [circuit.png](STM32/CAT12/TASK12A/circuit.png) | [README.md](STM32/CAT12/TASK12A/README.md) | TASK12A.ioc, MDK-ARM/ | **PASSED** |
-| **CAT 12 - TASK 12B** | [STM32/CAT12/TASK12B/](STM32/CAT12/TASK12B/) | [circuit.png](STM32/CAT12/TASK12B/circuit.png) | [README.md](STM32/CAT12/TASK12B/README.md) | TASK12B.ioc, MDK-ARM/ | **PASSED** |
-| **CAT 12 - TASK 12C** | [STM32/CAT12/TASK12C/](STM32/CAT12/TASK12C/) | [circuit.png](STM32/CAT12/TASK12C/circuit.png) | [README.md](STM32/CAT12/TASK12C/README.md) | TASK12C.ioc, MDK-ARM/ | **PASSED** |
-| **CAT 13 - TASK 13A** | [STM32/CAT13/TASK13A/](STM32/CAT13/TASK13A/) | [circuit.png](STM32/CAT13/TASK13A/circuit.png) | [README.md](STM32/CAT13/TASK13A/README.md) | TASK13A.ioc, MDK-ARM/ | **PASSED** |
-| **CAT 13 - TASK 13B** | [STM32/CAT13/TASK13B/](STM32/CAT13/TASK13B/) | [circuit.png](STM32/CAT13/TASK13B/circuit.png) | [README.md](STM32/CAT13/TASK13B/README.md) | TASK13B.ioc, MDK-ARM/ | **PASSED** |
-| **CAT 13 - TASK 13C** | [STM32/CAT13/TASK13C/](STM32/CAT13/TASK13C/) | [circuit.png](STM32/CAT13/TASK13C/circuit.png) | [README.md](STM32/CAT13/TASK13C/README.md) | TASK13C.ioc, MDK-ARM/ | **PASSED** |
-| **CAT 14 - TASK 14** | [STM32/CAT14/TASK14/](STM32/CAT14/TASK14/) | [circuit.png](STM32/CAT14/TASK14/circuit.png) | [README.md](STM32/CAT14/TASK14/README.md) | TASK14.ioc, MDK-ARM/ | **PASSED** |
-| **CAT 14 - TASK 14A** | [STM32/CAT14/TASK14A/](STM32/CAT14/TASK14A/) | [circuit.png](STM32/CAT14/TASK14A/circuit.png) | [README.md](STM32/CAT14/TASK14A/README.md) | TASK14A.ioc, MDK-ARM/ | **PASSED** |
-| **CAT 14 - TASK 14B** | [STM32/CAT14/TASK14B/](STM32/CAT14/TASK14B/) | [circuit.png](STM32/CAT14/TASK14B/circuit.png) | [README.md](STM32/CAT14/TASK14B/README.md) | TASK14B.ioc, MDK-ARM/ | **PASSED** |
-| **CAT 15 - TASK 15** | [STM32/CAT15/TASK15/](STM32/CAT15/TASK15/) | [circuit.png](STM32/CAT15/TASK15/circuit.png) | [README.md](STM32/CAT15/TASK15/README.md) | IOT_project.ioc, MDK-ARM/ | **PASSED** |
-| **CAT 15 - Node-RED** | [STM32/CAT15/NodeRED/](STM32/CAT15/NodeRED/) | [circuit.png](STM32/CAT15/circuit.png) | [README.md](STM32/CAT15/NodeRED/README.md) | flows.json | **PASSED** |
+| Task | Evaluated Directory | Circuit Diagram | Documentation | Project Files |
+| --- | --- | :---: | :---: | :---: |
+| **CAT 8 - TASK 8A** | [STM32/CAT8/TASK8A/](STM32/CAT8/TASK8A/) | [circuit.png](STM32/CAT8/TASK8A/circuit.png) | [README.md](STM32/CAT8/TASK8A/README.md) | TASK8A.ioc, MDK-ARM/ |
+| **CAT 8 - TASK 8B** | [STM32/CAT8/TASK8B/](STM32/CAT8/TASK8B/) | [circuit.png](STM32/CAT8/TASK8B/circuit.png) | [README.md](STM32/CAT8/TASK8B/README.md) | TASK8B.ioc, MDK-ARM/ |
+| **CAT 8 - TASK 8C** | [STM32/CAT8/TASK8C/](STM32/CAT8/TASK8C/) | [circuit.png](STM32/CAT8/TASK8C/circuit.png) | [README.md](STM32/CAT8/TASK8C/README.md) | TASK8C.ioc, MDK-ARM/ |
+| **CAT 9 - TASK 9A** | [STM32/CAT9/TASK9A/](STM32/CAT9/TASK9A/) | [circuit.png](STM32/CAT9/TASK9A/circuit.png) | [README.md](STM32/CAT9/TASK9A/README.md) | TASK9A.ioc, MDK-ARM/ |
+| **CAT 9 - TASK 9B** | [STM32/CAT9/TASK9B/](STM32/CAT9/TASK9B/) | [circuit.png](STM32/CAT9/TASK9B/circuit.png) | [README.md](STM32/CAT9/TASK9B/README.md) | TASK9B.ioc, MDK-ARM/ |
+| **CAT 10 - TASK 10A** | [STM32/CAT10/TASK10A/](STM32/CAT10/TASK10A/) | [circuit.png](STM32/CAT10/TASK10A/circuit.png) | [README.md](STM32/CAT10/TASK10A/README.md) | TASK10A.ioc, MDK-ARM/ |
+| **CAT 10 - TASK 10B** | [STM32/CAT10/TASK10B/](STM32/CAT10/TASK10B/) | [circuit.png](STM32/CAT10/TASK10B/circuit.png) | [README.md](STM32/CAT10/TASK10B/README.md) | TASK10B.ioc, MDK-ARM/ |
+| **CAT 10 - TASK 10C** | [STM32/CAT10/TASK10C/](STM32/CAT10/TASK10C/) | [circuit.png](STM32/CAT10/TASK10C/circuit.png) | [README.md](STM32/CAT10/TASK10C/README.md) | TASK10C.ioc, MDK-ARM/ |
+| **CAT 11 - TASK 11A** | [STM32/CAT11/TASK11A/](STM32/CAT11/TASK11A/) | [circuit.png](STM32/CAT11/TASK11A/circuit.png) | [README.md](STM32/CAT11/TASK11A/README.md) | TASK11A.ioc, MDK-ARM/ |
+| **CAT 11 - TASK 11B** | [STM32/CAT11/TASK11B/](STM32/CAT11/TASK11B/) | [circuit.png](STM32/CAT11/TASK11B/circuit.png) | [README.md](STM32/CAT11/TASK11B/README.md) | TASK11B.ioc, MDK-ARM/ |
+| **CAT 11 - TASK 11C** | [STM32/CAT11/TASK11C/](STM32/CAT11/TASK11C/) | [circuit.png](STM32/CAT11/TASK11C/circuit.png) | [README.md](STM32/CAT11/TASK11C/README.md) | TASK11C.ioc, MDK-ARM/ |
+| **CAT 12 - TASK 12A** | [STM32/CAT12/TASK12A/](STM32/CAT12/TASK12A/) | [circuit.png](STM32/CAT12/TASK12A/circuit.png) | [README.md](STM32/CAT12/TASK12A/README.md) | TASK12A.ioc, MDK-ARM/ |
+| **CAT 12 - TASK 12B** | [STM32/CAT12/TASK12B/](STM32/CAT12/TASK12B/) | [circuit.png](STM32/CAT12/TASK12B/circuit.png) | [README.md](STM32/CAT12/TASK12B/README.md) | TASK12B.ioc, MDK-ARM/ |
+| **CAT 12 - TASK 12C** | [STM32/CAT12/TASK12C/](STM32/CAT12/TASK12C/) | [circuit.png](STM32/CAT12/TASK12C/circuit.png) | [README.md](STM32/CAT12/TASK12C/README.md) | TASK12C.ioc, MDK-ARM/ |
+| **CAT 13 - TASK 13A** | [STM32/CAT13/TASK13A/](STM32/CAT13/TASK13A/) | [circuit.png](STM32/CAT13/TASK13A/circuit.png) | [README.md](STM32/CAT13/TASK13A/README.md) | TASK13A.ioc, MDK-ARM/ |
+| **CAT 13 - TASK 13B** | [STM32/CAT13/TASK13B/](STM32/CAT13/TASK13B/) | [circuit.png](STM32/CAT13/TASK13B/circuit.png) | [README.md](STM32/CAT13/TASK13B/README.md) | TASK13B.ioc, MDK-ARM/ |
+| **CAT 13 - TASK 13C** | [STM32/CAT13/TASK13C/](STM32/CAT13/TASK13C/) | [circuit.png](STM32/CAT13/TASK13C/circuit.png) | [README.md](STM32/CAT13/TASK13C/README.md) | TASK13C.ioc, MDK-ARM/ |
+| **CAT 14 - TASK 14** | [STM32/CAT14/TASK14/](STM32/CAT14/TASK14/) | [circuit.png](STM32/CAT14/TASK14/circuit.png) | [README.md](STM32/CAT14/TASK14/README.md) | TASK14.ioc, MDK-ARM/ |
+| **CAT 14 - TASK 14A** | [STM32/CAT14/TASK14A/](STM32/CAT14/TASK14A/) | [circuit.png](STM32/CAT14/TASK14A/circuit.png) | [README.md](STM32/CAT14/TASK14A/README.md) | TASK14A.ioc, MDK-ARM/ |
+| **CAT 14 - TASK 14B** | [STM32/CAT14/TASK14B/](STM32/CAT14/TASK14B/) | [circuit.png](STM32/CAT14/TASK14B/circuit.png) | [README.md](STM32/CAT14/TASK14B/README.md) | TASK14B.ioc, MDK-ARM/ |
+| **CAT 15 - TASK 15** | [STM32/CAT15/TASK15/](STM32/CAT15/TASK15/) | [circuit.png](STM32/CAT15/TASK15/circuit.png) | [README.md](STM32/CAT15/TASK15/README.md) | IOT_project.ioc, MDK-ARM/ |
+| **CAT 15 - Node-RED** | [STM32/CAT15/NodeRED/](STM32/CAT15/NodeRED/) | [circuit.png](STM32/CAT15/circuit.png) | [README.md](STM32/CAT15/NodeRED/README.md) | flows.json |
 ---
 
 ## 7. Hardware Platform Specifications & Network Configuration
